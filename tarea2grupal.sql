@@ -14,28 +14,18 @@
 /* base de datos es  tarea*/
 
 
+/*primero tablas*/
 CREATE TABLE tarea.dbo.ESPECTACULOS (
     COD_ESPECTACULO int  NOT NULL,
-    NOMBRE
+    NOMBRE char(128)  NOT NULL,
+    TIPO 
+    FECHA_INICIAL
+    FECHA_FINAL
+    INTERPRETE
+    COD_RECINTO
 );
 
-CREATE TABLE tarea.dbo.city (
-    id int  NOT NULL IDENTITY(1, 1),
-    city_name char(128)  NOT NULL,
-    lat decimal(9,6)  NOT NULL,
-    long decimal(9,6)  NOT NULL,
-    country_id int  NOT NULL,
-    CONSTRAINT city_pk PRIMARY KEY  (id)
-);
 
-CREATE TABLE personas.dbo.city (
-    id int  NOT NULL IDENTITY(1, 1),
-    city_name char(128)  NOT NULL,
-    lat decimal(9,6)  NOT NULL,
-    long decimal(9,6)  NOT NULL,
-    country_id int  NOT NULL,
-    CONSTRAINT city_pk PRIMARY KEY  (id)
-);
 
 
 
