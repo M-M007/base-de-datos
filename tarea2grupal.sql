@@ -15,18 +15,19 @@
 
 
 /*primero tablas*/
+
+/*ADD CONSTRAINT chk_type CHECK (Tipo IN('PC', 'Laptop', 'Impresora'));*/
+
 CREATE TABLE tarea.dbo.ESPECTACULOS (
     COD_ESPECTACULO int  NOT NULL,
-    NOMBRE char(128)  NOT NULL,
+    NOMBRE varchar(128)  NOT NULL,
     TIPO 
     FECHA_INICIAL
     FECHA_FINAL
     INTERPRETE
     COD_RECINTO
+    PRIMARY KEY (COD_ESPECTACULO)
 );
-
-
-
 
 
 
