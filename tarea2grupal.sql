@@ -11,19 +11,15 @@
 --ENTRADAS (COD_ESPECTACULO, FECHA, HORA, COD_RECINTO, FILA,NUMERO, ZONA, DNI_CLIENTE)
 --ESPECTADORES (DNI_CLIENTE, NOMBRE, DIRECCION, TELEFONO, CIUDAD,NTARJETA)
 
-/* base de datos es */
+/* base de datos es  tarea*/
 
 
-CREATE TABLE personas.dbo.city (
-    id int  NOT NULL IDENTITY(1, 1),
-    city_name char(128)  NOT NULL,
-    lat decimal(9,6)  NOT NULL,
-    long decimal(9,6)  NOT NULL,
-    country_id int  NOT NULL,
-    CONSTRAINT city_pk PRIMARY KEY  (id)
+CREATE TABLE tarea.dbo.ESPECTACULOS (
+    COD_ESPECTACULO int  NOT NULL,
+    NOMBRE
 );
 
-CREATE TABLE personas.dbo.city (
+CREATE TABLE tarea.dbo.city (
     id int  NOT NULL IDENTITY(1, 1),
     city_name char(128)  NOT NULL,
     lat decimal(9,6)  NOT NULL,
